@@ -1,0 +1,156 @@
+html {
+    font-size: 100%;
+}
+
+html, * {
+    box-sizing: border-box;
+}
+
+body {
+    color: #516677;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ARTICLES */
+
+.articles {
+	position: relative;
+	padding: 25px 70px;
+	width: 100%;
+	margin-top: 70px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.articles .container-search {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 35px;
+}
+
+.articles .container-search .icn {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	width: 25px;
+	height: 25px;
+}
+
+.articles .container-search .icn img {
+	width: 100%;
+}
+
+.articles .container-search #liveSearch {
+	padding: 0 0 0 50px;
+	width: 300px;
+	height: 100%;
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+}
+
+.articles .container-search #liveSearch:focus {
+	outline: none;
+}
+
+.articles .container-card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 34px;
+}
+
+.articles .container-card .card {
+	position: relative;
+	margin-bottom: 35px;
+	padding: 20px;
+	width: 350px;
+	height: 250px;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.articles .container-card .card h3 {
+	font-size: 25px;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.articles .container-card .card p {
+	height: 125px;
+	overflow-y: hidden;
+}
+
+.articles .container-card .card a {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 125px;
+	height: 35px;
+	color: #fff;
+	background-color: #FF7F50;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.articles .container-card .card a:hover {
+	opacity: 0.8;
+}
+
+.articles .container-seemore {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.articles .container-seemore button {
+	width: 125px;
+	height: 35px;
+	color: #fff;
+	background-color: #FF7F50;
+	border-radius: 10px;
+}
+.articles .container-seemore button:hover {
+	opacity: 0.8;
+}
+.articles .container-seemore button:focus {
+	outline: none;
+}
+
+/* ARTICLE */
+
+.article {
+	padding: 25px 70px;
+}
+
+.article h1 {
+	font-size: 35px;
+}
+
+.article .el {
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.article .el:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.article .el img {
+	width: 500px;
+}
+
+.article .el p {
+	width: 500px;
+}
