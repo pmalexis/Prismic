@@ -1,4 +1,6 @@
 <?php 
+use Prismic\Dom\RichText;
+
 $document = $WPGLOBAL['document'];
 $title = "Articles";
 include_once 'header.php'; 
@@ -20,7 +22,7 @@ include_once 'header.php';
 		foreach ($document->results as $arr) { 
 			if($i < 10) { ?>
 				<div class="card">
-					<h3><?php echo $arr->data->body[0]->primary->titre_de_l_article[0]->text; ?></h3>
+					<h3><?= RichText::asText($arr->data->body[0]->primary->titre_de_l_article) ?></h3>
 					<p><?php echo $arr->data->body[0]->primary->texte_de_l_article[0]->text; ?></p>
 					<a href="articles/<?php echo $arr->uid; ?>">Lire l'article</a>
 				</div>

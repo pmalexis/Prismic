@@ -1,10 +1,12 @@
-<?php $document = $WPGLOBAL['document']; ?>
+<?php 
+use Prismic\Dom\RichText;
+$document = $WPGLOBAL['document']; ?>
 
 <?php include_once 'header.php'; ?>
     
 <div class="article">
-  <h1><?php echo $document->data->body[0]->primary->titre_de_l_article[0]->text; ?></h1>
-  <p><?php echo $document->data->body[0]->primary->texte_de_l_article[0]->text; ?></p>
+  <h1><?= RichText::asHtml($document->data->body[0]->primary->titre_de_l_article) ?></h1>
+  <p><?= RichText::asHtml($document->data->body[0]->primary->texte_de_l_article) ?></p>
 
   <?php foreach ($document->data->body[0]->items as $arr) { ?>
   		<div class="el">
