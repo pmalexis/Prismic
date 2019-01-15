@@ -19,5 +19,5 @@ include_once 'header.php';
 
 <?php 
 	include_once 'footer.php'; 
-	$_SESSION['lang'] = 'en-gb';
+	$_SESSION['lang'] = 'fr-fr';
 ?>
